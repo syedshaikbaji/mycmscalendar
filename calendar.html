@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CALENDAR</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome6/css/all.css">
+    <link rel="stylesheet" href="css/calendar-styles.css">
+</head>
+</head>
+
+<body>
+    <main class="calendar-block">
+        <div class="col-lg-12 mx-auto mt-2 p-0" style="max-width: 300px;">
+            <!-- Info: actual calendar starts -->
+            <div class="mycms-card col-lg-12 p-2">
+                <div class="mycms-calendar col-lg-12 p-0 bsb-05 pb-2">
+                    <!-- Info: Month and Year Navigtion START -->
+                    <div class="month col-9 mx-auto pt-0">
+                        <ul class="d-flex align-items-center justify-content-between">
+                            <li class="prev"><i class="fa-regular fa-angle-left"></i></li>
+                            <li>
+                                <span>August</span>
+                                <span>2023</span>
+                            </li>
+                            <li class="next"><i class="fa-regular fa-angle-right"></i></li>
+                        </ul>
+                    </div>
+                    <!-- Info: Month and Year Navigtion END -->
+                    <!-- Info: Weekdays START -->
+                    <ul class="weekdays">
+                        <li>Mon</li>
+                        <li>Tue</li>
+                        <li>Wed</li>
+                        <li>Thu</li>
+                        <li>Fri</li>
+                        <li>Sat</li>
+                        <li>Sun</li>
+                    </ul>
+                    <!-- Info: Weekdays END -->
+                    <!-- Info: individual days START -->
+                    <ul class="days">
+                        <li class="inactive">25</li>
+                        <li class="inactive">26</li>
+                        <li class="inactive">27</li>
+                        <li class="inactive">28</li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>
+                            8
+                            <span class="event-block">
+                                <i class="fa-solid fa-circle have-event dot-have-starts"></i>
+                                <i class="fa-solid fa-circle have-event dot-have-one-or-more-interviews"></i>
+                            </span>
+                        </li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li class="active">
+                            17
+                            <span class="event-block">
+                                <i class="fa-solid fa-circle have-event dot-have-one-or-more-interviews"></i>
+                                <i class="fa-solid fa-circle have-event dot-have-starts"></i>
+                            </span>
+                        </li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20
+                            <span class="event-block">
+                                <i class="fa-solid fa-circle have-event dot-have-one-or-more-interviews"></i>
+                            </span>
+                        </li>
+                        <li>21</li>
+                        <li>
+                            22
+                            <span class="event-block">
+                                <i class="fa-solid fa-circle have-event dot-have-one-or-more-interviews"></i>
+                                <i class="fa-solid fa-circle have-event dot-have-starts"></i>
+                            </span>
+                        </li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>
+                            26
+                            <span class="event-block">
+                                <i class="fa-solid fa-circle have-event dot-have-one-or-more-interviews"></i>
+                                <i class="fa-solid fa-circle have-event dot-have-starts"></i>
+                            </span>
+                        </li>
+                        <li>27</li>
+                        <li>28
+                            <span class="event-block">
+                                <i class="fa-solid fa-circle have-event dot-have-one-or-more-interviews"></i>
+                            </span>
+                        </li>
+                        <li>29</li>
+                        <li>30</li>
+                        <li>31</li>
+                    </ul>
+                    <!-- Info: individual days END -->
+                </div>
+                <div class="legends-block col-lg-12 px-0 py-2 bsb-05 pb-2">
+                    <span class="text-uppercase mr-4">
+                        <i class="fa-solid fa-circle have-event dot-have-starts mr-1"></i>
+                        Starts <small class="text-capitalize">(Tentative)</small>
+                    </span>
+                    <span class="text-uppercase mr-auto">
+                        <i class="fa-solid fa-circle have-event dot-have-one-or-more-interviews mr-1"></i>
+                        Interview
+                    </span>
+                </div>
+                <div class="selected-date-event-details-block col-lg-12 p-0 py-3">
+                    <h6 class="event-date">Apr 17, 2023</h6>
+                    <p class="event-summary">
+                        <span class="col-4 p-0 text-color-black-medium-light">Start(s): <span
+                                class="starts-count text-bold">02</span></span>
+                        <span class="col-8 p-0 text-color-black-medium-light">Interview(s): <span
+                                class="interview-count text-bold">01</span></span>
+                    </p>
+                    <div class="events-list-block col-lg-12 p-1">
+                        <div class="events-list-has-data col-lg-12 p-0">
+                            <ul class="event-list-items">
+                                <li class="item starts-item">
+                                    <div class="item-content col-12 pl-4 pr-2 py-2">
+                                        <div class="bullet col-6 p-0 mb-1">Starts</div>
+                                        <div class="compay-name text-right text-color-black-thin-light col-6 p-0 mb-1">
+                                            Accenture India Accenture India Accenture India</div>
+                                        <div class="person-name font-weight-700 col-6 p-0 mb-1">John Doe</div>
+                                        <div class="address-line text-right text-color-black-thin-light col-6 p-0 mb-1">
+                                            Bengaluru, KA</div>
+                                        <div class="designation-details text-color-black-medium-light col-12 p-0 mb-1">
+                                            Senior UX Designer</div>
+                                        <div class="requisition-details text-color-black-medium-light col-12 p-0 mb-1">
+                                            <span>Requisition:</span>
+                                            <a href="#">CO8293- Senior UX Desig CO8293- Senior UX Desig</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item starts-item">
+                                    <div class="item-content col-12 pl-4 pr-2 py-2">
+                                        <div class="bullet col-6 p-0 mb-1">Starts</div>
+                                        <div class="compay-name text-right text-color-black-thin-light col-6 p-0 mb-1">
+                                            Well Fargo</div>
+                                        <div class="person-name font-weight-700 col-6 p-0 mb-1">Emily Smith</div>
+                                        <div class="address-line text-right text-color-black-thin-light col-6 p-0 mb-1">
+                                            Hyderabad, TL</div>
+                                        <div class="designation-details text-color-black-medium-light col-12 p-0 mb-1">
+                                            Senior Java Developer</div>
+                                        <div class="requisition-details text-color-black-medium-light col-12 p-0 mb-1">
+                                            <span>Requisition:</span>
+                                            <a href="#">CO8293- Senior UX Desi CO8293- Senior UX Desig</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item interview-item">
+                                    <div class="item-content col-12 pl-4 pr-2 py-2">
+                                        <div class="bullet col-6 p-0 mb-1">Interview</div>
+                                        <div class="compay-name text-right text-color-black-thin-light col-6 p-0 mb-1">
+                                            Well Fargo</div>
+                                        <div class="person-name font-weight-700 col-6 p-0 mb-1">Roger Federer Emily
+                                            Smith</div>
+                                        <div class="address-line text-right text-color-black-thin-light col-6 p-0 mb-1">
+                                            Hyderabad, TL</div>
+                                        <div class="designation-details text-color-black-medium-light col-12 p-0 mb-1">
+                                            Senior Java Developer</div>
+                                        <div class="requisition-details text-color-black-medium-light col-12 p-0 mb-1">
+                                            <span>Requisition:</span>
+                                            <a href="#">CO8293- Senior UX Desig CO8293- Senior UX Desig</a>
+                                        </div>
+                                        <div class="interview-timings-nd-rounds-block col-12 p-0 px-1">
+                                            <span class="round-details">Round: <b>02 (F-to-F)</b></span>
+                                            <span class="timings-details">Time: <b>13:00 - 13:30</b></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item starts-item">
+                                    <div class="item-content col-12 pl-4 pr-2 py-2">
+                                        <div class="bullet col-6 p-0 mb-1">Starts</div>
+                                        <div class="compay-name text-right text-color-black-thin-light col-6 p-0 mb-1">
+                                            Well Fargo</div>
+                                        <div class="person-name font-weight-700 col-6 p-0 mb-1">Emily Smith</div>
+                                        <div class="address-line text-right text-color-black-thin-light col-6 p-0 mb-1">
+                                            Hyderabad, TL</div>
+                                        <div class="designation-details text-color-black-medium-light col-12 p-0 mb-1">
+                                            Senior Java Developer</div>
+                                        <div class="requisition-details text-color-black-medium-light col-12 p-0 mb-1">
+                                            <span>Requisition:</span>
+                                            <a href="#">CO8293- Senior UX Desi CO8293- Senior UX Desig</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item interview-item">
+                                    <div class="item-content col-12 pl-4 pr-2 py-2">
+                                        <div class="bullet col-6 p-0 mb-1">Interview</div>
+                                        <div class="compay-name text-right text-color-black-thin-light col-6 p-0 mb-1">
+                                            Well Fargo</div>
+                                        <div class="person-name font-weight-700 col-6 p-0 mb-1">Roger Federer Emily
+                                            Smith</div>
+                                        <div class="address-line text-right text-color-black-thin-light col-6 p-0 mb-1">
+                                            Hyderabad, TL</div>
+                                        <div class="designation-details text-color-black-medium-light col-12 p-0 mb-1">
+                                            Senior Java Developer</div>
+                                        <div class="requisition-details text-color-black-medium-light col-12 p-0 mb-1">
+                                            <span>Requisition:</span>
+                                            <a href="#">CO8293- Senior UX Desig CO8293- Senior UX Desig</a>
+                                        </div>
+                                        <div class="interview-timings-nd-rounds-block col-12 p-0 px-1">
+                                            <span class="round-details">Round: <b>02 (F-to-F)</b></span>
+                                            <span class="timings-details">Time: <b>13:00 - 13:30</b></span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="events-list-no-data col-lg-12 p-0">
+                            <span class="init-coi d-block">
+                                <img class="img-fluid w-100" src="./images/no-events-found.svg" alt="">
+                                <span class="text-on-image">No Events for today</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Info: calendar ENDS -->
+        </div>
+    </main>
+    <!-- scripts goes below -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="actions-demo-scripts.js"></script>
+</body>
+
+</html>
